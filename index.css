@@ -1,0 +1,393 @@
+/*
+	@name desktop___1
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+
+#page_desktop___1_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+}
+
+#_bg__desktop___1_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_1 {
+	top: 27px;
+	left: 53px;
+	width: 230px;
+	height: 51px;
+	background:rgba(217,217,217,1);
+}
+
+
+#rectangle_2 {
+	top: 27px;
+	left: 330px;
+	width: 230px;
+	height: 51px;
+	background:rgba(217,217,217,1);
+}
+
+
+#rectangle_3 {
+	top: 27px;
+	left: 607px;
+	width: 230px;
+	height: 51px;
+	background:rgba(217,217,217,1);
+}
+
+
+#ellipse_1 {
+	top: 23px;
+	left: 1354px;
+	width: 60px;
+	height: 60px;
+	-ms-border-radius: 30px / 30px;
+	-o-border-radius: 30px / 30px;
+	-moz-border-radius: 30px / 30px;
+	-webkit-border-radius: 30px / 30px;
+	border-radius: 30px / 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#rectangle_4 {
+	top: 125px;
+	left: 53px;
+	width: 1331px;
+	height: 292px;
+}
+
+
+#rectangle_5 {
+	top: 477px;
+	left: 52px;
+	width: 393px;
+	height: 393px;
+}
+
+
+#rectangle_6 {
+	top: 477px;
+	left: 525px;
+	width: 393px;
+	height: 393px;
+}
+
+
+#rectangle_7 {
+	top: 477px;
+	left: 991px;
+	width: 393px;
+	height: 393px;
+}
+
+
+#_______ {
+	top: 41px;
+	left: 72px;
+	width: 200px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#moscow_t_shirt {
+	top: 884px;
+	left: 142px;
+	width: 222px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_1349 {
+	top: 903px;
+	left: 140px;
+	width: 228px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Genos;
+	font-size: 32px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#raremoscow_t_shirt {
+	top: 879px;
+	left: 1091px;
+	width: 222px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_1349_ek1 {
+	top: 903px;
+	left: 613px;
+	width: 228px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Genos;
+	font-size: 32px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#cube_t_shirt {
+	top: 884px;
+	left: 612px;
+	width: 222px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_1349_ek2 {
+	top: 898px;
+	left: 1086px;
+	width: 228px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Genos;
+	font-size: 32px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#________ {
+	top: 41px;
+	left: 349px;
+	width: 200px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_____ {
+	top: 41px;
+	left: 627px;
+	width: 200px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#u {
+	top: 34px;
+	left: 1360px;
+	width: 59px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#arrow_1 {
+	top: 995px;
+	left: 703px;
+	width: 33px;
+	height: 0px;
+}
+
+#page_iphone_8___1_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 375px;
+	height: 667px;
+}
+
+#_bg__iphone_8___1_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 375px;
+	height: 667px;
+	background:rgba(255,255,255,1);
+}
+
+
+#ellipse_1_ek1 {
+	top: 23px;
+	left: 20px;
+	width: 34px;
+	height: 34px;
+	-ms-border-radius: 17px / 17px;
+	-o-border-radius: 17px / 17px;
+	-moz-border-radius: 17px / 17px;
+	-webkit-border-radius: 17px / 17px;
+	border-radius: 17px / 17px;
+	background:rgba(217,217,217,1);
+}
+
+
+#rectangle_4_ek1 {
+	top: 89px;
+	left: 20px;
+	width: 335px;
+	height: 136px;
+}
+
+
+#rectangle_5_ek1 {
+	top: 284px;
+	left: 18px;
+	width: 150px;
+	height: 150px;
+}
+
+
+#rectangle_6_ek1 {
+	top: 284px;
+	left: 208px;
+	width: 150px;
+	height: 150px;
+}
+
+
+#moscow_t_shirt_ek1 {
+	top: 446px;
+	left: 31px;
+	width: 134px;
+	height: 29px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_1349_ek3 {
+	top: 499px;
+	left: 29px;
+	width: 140px;
+	height: 63px;
+	overflow: hidden;
+	font-family: Genos;
+	font-size: 32px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_1349_ek4 {
+	top: 499px;
+	left: 220px;
+	width: 139px;
+	height: 63px;
+	overflow: hidden;
+	font-family: Genos;
+	font-size: 32px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#cube_t_shirt_ek1 {
+	top: 446px;
+	left: 234px;
+	width: 108px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#_1349_ek5 {
+	top: 531px;
+	left: 531px;
+	width: 117px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Genos;
+	font-size: 32px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#u_ek1 {
+	top: 30px;
+	left: 24px;
+	width: 33px;
+	height: 31px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color:#000000;
+}
+
+
+#arrow_1_ek1 {
+	top: 642px;
+	left: 173px;
+	width: 29px;
+	height: 0px;
+}
+
+
+
+/* Add your custom CSS here */
