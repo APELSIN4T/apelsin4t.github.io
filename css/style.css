@@ -1,0 +1,22 @@
+p {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+html {
+    background-color: beige;
+}
+
+form {
+    text-align: center;
+}
+.names table.infoTable td {
+    margin: 0 !important;
+    padding: 7px;
+    border-spacing: 0;
+    border: 1px solid #cacaca;
+    width: 500px;
+    height: 10px;
+    
+}
