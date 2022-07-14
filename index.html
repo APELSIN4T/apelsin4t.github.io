@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>Локальный сервер</title>
+    </head>
+<p>Локальный хостинг 127.0.0.0.1</p>
+<p id="nev">Войдите в базу данных = НЕУСПЕШНО</p>
+<script src = "mainJS.js"> </script>
+<form name="search">
+    <input type="text" name="key" placeholder="Введите ключ"></input>
+    <input type="button" name="print" value="Печать" onclick="alerted()"/>
+</form>
+<element class="names">
+    <table class="infoTable" align="center">
+        <thead>
+            <tr>
+                <td class="num">№</td>
+                <td class="id">ID</td>
+                <td class="message">Информация</td>
+            </tr>
+        </thead>
+        <tr id = "1">
+            <td class="num">1</td>
+            <td class="id">10928</td>
+            <td class="message">Сообщение</td>
+        </tr>
+    </table>
+</element>
+<div id="printBlock"></div>
+</html>
