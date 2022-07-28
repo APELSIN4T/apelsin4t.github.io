@@ -1,0 +1,403 @@
+input,
+textarea,
+keygen,
+select,
+button {
+    color: inherit;
+}
+
+%text,
+%textarea,
+%select {
+    @extend %font-body;
+
+    display: block;
+    // max-width: 100%;
+    height: auto;
+    padding: .5em .9em;
+
+    border: 1px solid $dark;
+    border-radius: 0;
+
+    font: inherit;
+
+    background: transparent;
+    color: inherit;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+%button {
+    @extend .c-btn;
+}
+
+@include placeholder() {
+    font-family: inherit;
+    color: inherit;
+    opacity: 0.5;
+}
+
+.c-overlay {
+
+    @include placeholder() {
+        color: #C7C7C7;
+    }
+}
+
+%text,
+%select:not([multiple]) {
+    height: 2.75em;
+}
+
+%textarea {
+    max-width: 100%;
+}
+
+%text,
+%textarea,
+%select {
+    width: 100%;
+    max-width: 100%;
+}
+
+%button {
+    @extend .c-btn;
+
+    form & {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+%label {
+    @extend %heading;
+    @extend %fs-11;
+    @include baseline(14/12, map-get($font-headings, cap-height));
+    display: block;
+
+    &:after {
+        @extend %pb-xs;
+    }
+}
+
+input[type="submit"],
+input[type="button"],
+button[type="submit"] {
+    @extend %button;
+}
+
+.body.body.body .content-area {
+
+    label {
+        @extend %label;
+    }
+
+    p > label {
+        margin: 0;
+        padding: 0;
+    }
+
+    input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):not([type="file"]) {
+        @extend %text;
+    }
+
+    select,
+    select[name] {
+        @extend %select;
+
+        option {
+            color: #000000;
+        }
+    }
+
+    textarea {
+        @extend %textarea;
+    }
+}
+
+@mixin reset-font() {
+    font: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+
+    &:before,
+    &:after {
+        display: none;
+    }
+}
+
+// CF7
+.wpcf7-form-control-wrap,
+.wpcf7-form-control-wrap span {
+    display: block;
+}
+
+.wpcf7-custom {
+    @extend %ml--m;
+    display: flex;
+    flex-wrap: wrap;
+
+    &[class] > * {
+        margin: 0;
+        padding: 0;
+    }
+
+    &[class][class] > * {
+        @extend %pl-m;
+        @extend %mb-m;
+        flex-basis: 100%;
+    }
+
+    &[class][class] > .wpcf7-half {
+        flex-basis: 50%;
+    }
+
+    &[class][class] > .wpcf7-response-output {
+        order: -1;
+        border-width: 0;
+    }
+
+    &[class][class][class] > .wpcf7-response-output {
+        @extend %bl-xs;
+        @extend %pl-s;
+    }
+}
+
+.u-content-width > div.wpcf7 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wpcf7-form-control-wrap span {
+    @extend %mt-xs;
+}
+
+.div.wpcf7-response-output {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.body.body.body {
+
+    .wpcf7-list-item {
+        margin-left: 0;
+
+        &, label {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            @include reset-font();
+        }
+    }
+}
+
+// WPForms Lite
+.wpforms-container[class] {
+    margin-left: auto;
+    margin-right: auto;
+
+    .wpforms-field {
+        @extend %mb-m;
+        flex-basis: 100%;
+
+        .wpforms-field-row.wpforms-field-row {
+            max-width: none;
+        }
+    }
+
+    .wpforms-field-container {
+        @extend %ml--m;
+        display: flex;
+        flex-wrap: wrap;
+
+        .wpforms-field {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+            @extend %pl-m;
+        }
+    }
+
+    .wpforms-field-row-block {
+        input + label {
+            @extend %mt-xs;
+        }
+    }
+
+
+   .body & .wpforms-submit,
+   .body & .wpforms-submit:hover {
+        @extend %button;
+    }
+
+    .wpforms-field-radio,
+    .wpforms-field-checkbox {
+        .wpforms-field-label {
+            @extend %mb-xs;
+        }
+    }
+
+    .wpforms-field-radio li,
+    .wpforms-field-checkbox li {
+        display: flex;
+        align-items: center;
+        margin: 0 !important;
+
+        input {
+            margin: 0 !important;
+        }
+
+        input + label {
+            @extend %ml-xs;
+        }
+
+        label {
+            @include reset-font();
+        }
+    }
+}
+
+.body[class][class][class] .wpforms-error {
+    @extend %mb-xs;
+
+    &:before, &:after {
+        content: none;
+        font: inherit;
+    }
+}
+
+.wpforms-container.half {
+
+    .wpforms-field {
+        flex-basis: 50%;
+    }
+
+    .wpforms-field-textarea {
+        flex-basis: 100%;
+    }
+}
+
+
+// Ninja Forms
+.label-above .field-wrap > *,
+.label-below .field-wrap > * {
+    width: 100%;
+}
+
+.nf-field-label,
+.nf-field-container {
+    margin: 0;
+}
+
+.body .checkbox-wrap label {
+    padding: 0 !important;
+}
+
+.body .list-checkbox-wrap .nf-field-element li,
+.body .list-radio-wrap .nf-field-element li {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+
+    label {
+        @include reset-font();
+    }
+}
+
+.nf-form-cont {
+    input[type="button"] {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+.nf-field {
+
+    .checkbox-wrap .nf-field-label label {
+        @include reset-font();
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    &.list-checkbox-wrap input {
+        display: none;
+    }
+
+    .list-radio-wrap,
+    .list-checkbox-wrap {
+
+        .nf-field-element {
+            @extend %mt-xs;
+
+            li {
+                input {
+                    margin-right: 0;
+                }
+
+                label {
+                    @extend %ml-xs;
+                }
+            }
+        }
+    }
+
+    .nf-static {
+        padding: 0;
+    }
+}
+
+.nf-field-container > :last-child {
+    @extend %mb-m;
+}
+
+.nf-field-container.label-above .nf-field-label {
+    margin-bottom: 0;
+}
+
+.nf-field-container.label-right .checkbox-wrap {
+    .nf-field-element {
+        width: auto;
+
+        input {
+            width: auto;
+        }
+    }
+
+    .nf-field-label {
+        @extend %ml-xs;
+        padding-left: 0;
+    }
+}
+
+.nf-form-layout .half {
+    nf-fields-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -$gutter--huge;
+    }
+
+    nf-field {
+        flex-basis: 50%;
+        padding-left: $gutter--huge;
+
+        &:last-child {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.nf-form-fields-required {
+    @extend %mb-s;
+}

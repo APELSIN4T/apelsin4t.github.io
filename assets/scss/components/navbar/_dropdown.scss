@@ -1,0 +1,88 @@
+.sub-menu,
+.children {
+    border-width: 0;
+}
+
+.c-navbar--dropdown {
+
+    [class*="children"] {
+        > a {
+            margin-right: 15px;
+        }
+
+        &:after {
+            right: 0;
+        }
+    }
+
+    .sub-menu,
+    .children {
+        @extend %ml--s;
+        @extend %pt-xs;
+        @extend %pb-xs;
+        @extend %bt-s;
+
+        background-color: #000000;
+        color: #FFFFFF;
+        transition: all .3s $easeOutCirc;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .sub-menu .sub-menu,
+    .children .children {
+        @extend %pt-xs;
+        @extend %bl-xs;
+        @extend %mt--m;
+    }
+
+    .sub-menu .menu-item,
+    .children .menu-item,
+    .children .page_item {
+        @extend %pt-xs;
+        @extend %pb-xs;
+        @extend %pr-s;
+        @extend %pl-s;
+
+        &:after {
+            @extend %mr-s;
+        }
+    }
+
+    @include below(lap) {
+
+        ul {
+            margin-left: 0 !important;
+        }
+
+        .sub-menu,
+        .children {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .menu-item,
+            .page_item {
+                padding: 0;
+            }
+        }
+
+        .sub-menu .sub-menu,
+        .children .children {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}
+
+.page_item,
+.menu-item {
+	word-break: normal;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
+}
+
+.page_item_has_children > .children:after { content: none; }

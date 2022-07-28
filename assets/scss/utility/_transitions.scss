@@ -1,0 +1,72 @@
+%showOnLoad {
+    transition: opacity .3s ease-in-out;
+
+    html:not(.is-loaded) & {
+        opacity: 0 !important;
+    }
+}
+
+%showOnReady {
+    transition: opacity .3s ease-in-out;
+
+    html:not(.is-ready) & {
+        opacity: 0 !important;
+    }
+}
+
+.u-content-width {
+    opacity: 0;
+    transition: opacity .3s .3s ease-in-out;
+
+    .is-ready & {
+        opacity: 1;
+    }
+}
+
+body.has-media-only {
+
+    @include below( pad ) {
+
+        .c-project__media .gallery {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}
+
+.c-page-header {
+    @extend %showOnReady;
+
+    body.has-media-only .c-slideshow & {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+.c-hero__content {
+    opacity: 0;
+    transform: translate3d(0,2rem,0);
+    transition: opacity .3s .3s linear, transform 1s .3s $easeOutCirc;
+    will-change: opacity, transform;
+
+    html.is-loaded & {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.c-hero__image {
+	transform: translateZ(0);
+	transition: transform 1s $easeOutCirc, opacity .3s linear;
+	transition-property: transform, opacity;
+	will-change: transform, opacity;
+
+	html:not(.is-loaded) & {
+		transform: scale(1.05);
+		opacity: 0 !important;
+	}
+}
